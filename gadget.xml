@@ -8,6 +8,7 @@
         <link href="gadget.css" rel="stylesheet" type="text/css" media="screen" />
         <script type="text/javascript" src="http://novellpulsegadget.appspot.com/static/processing.js"></script>
         <script type="text/javascript" src="http://novellpulsegadget.appspot.com/static/gadget.js"></script>
+        <script type="text/javascript" src="http://novellpulsegadget.appspot.com/static/json2.js"></script>
 <div class="c">
     <canvas id="canvasElement" width="100" height="100" ></canvas> 
     <table class="t"> 
