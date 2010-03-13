@@ -1,0 +1,26 @@
+.r {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 10px;
+ }
+ 
+.img {
+     border-top-style: none;
+     border-right-style: none;
+     border-bottom-style: none;
+     border-left-style: none;
+}
+ 
+.b {
+     overflow:hidden;
+     margin:0;
+     background:#FFFFFF;
+     text-align: center;
+}
+ 
+.t {
+    margin-left: auto;
+    margin-right: auto;
+}
+.c {
+    height: 480px;
+}
