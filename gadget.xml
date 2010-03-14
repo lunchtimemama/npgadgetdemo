@@ -6,9 +6,9 @@
   <Content type="html">
     <![CDATA[     
         <link href="gadget.css" rel="stylesheet" type="text/css" media="screen" />
-        <script type="text/javascript" src="http://brainsharegadget.appspot.com/static/processing.js"></script>
-        <script type="text/javascript" src="http://brainshare2010.appspot.com/static/gadget.js"></script>
-        <script type="text/javascript" src="http://brainsharegadget.appspot.com/static/json2.js"></script>
+        <script type="text/javascript" src="http://brainsharetest.appspot.com/static/processing.js"></script>
+        <script type="text/javascript" src="http://brainsharetest.appspot.com/static/gadget.js"></script>
+        <script type="text/javascript" src="http://brainsharetest.appspot.com/static/json2.js"></script>
 <div class="c">
     <canvas id="canvasElement" width="100" height="100" ></canvas> 
     <table class="t"> 
@@ -19,9 +19,9 @@
     <td rowspan="2"> 
  
     <object id="sound" width="1" height="1"> 
-         <param name="movie" value="http://brainsharegadget.appspot.com/static/sound.swf"> 
+         <param name="movie" value="http://brainsharetest.appspot.com/static/sound.swf"> 
          <param name="allowScriptAccess" value="always"> 
-         <embed src="http://brainsharegadget.appspot.com/static/sound.swf" width="1" height="1" name="sound" align="middle"
+         <embed src="http://brainsharetest.appspot.com/static/sound.swf" width="1" height="1" name="sound" align="middle"
              play="true" loop="false" allowScriptAccess="always"
              type="application/x-shockwave-flash"> 
      </object> 
