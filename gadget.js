@@ -268,14 +268,6 @@ window.onload = function (){
     };
     
     p.mouseReleased = function (){
-    if(mouseIsDown) {
-        var state = wave.getState();
-        var line = draggable;
-        if(line == -1) {
-            line = lines.length - 1;
-        }
-        state.submitValue(line, JSON.stringify(lines[line]));
-    }
 	mouseIsDown = false;
 	draggable = -1;
 	
@@ -383,24 +375,8 @@ window.onload = function (){
     
     //start processing.js
     p.init();
-    wave.setStateCallback(stateUpdated);
     
 };
-
-function stateUpdated() {
-    var state = wave.getState();
-    var keys = state.getKeys();
-    for(var i in keys) {
-        var line = JSON.parse(state.get(keys[i]));
-        if(keys[i] == lines.length) {
-            lines.push(new EditLine());
-        }
-        lines[keys[i]].x1 = line.x1;
-        lines[keys[i]].x2 = line.x2;
-        lines[keys[i]].y1 = line.y1;
-        lines[keys[i]].y2 = line.y2;
-    }
-}
  
 window.onresize = function(){
     this.resize();
@@ -411,11 +387,6 @@ window.onresize = function(){
  
 //reset button
 function reset(){
-    var delta = {};
-    for(var i in lines) {
-        delta[i] = null;
-    }
-    wave.getState().submitDelta(delta);
     lines = [];
     balls = [];
     ballDropRate = 100;
